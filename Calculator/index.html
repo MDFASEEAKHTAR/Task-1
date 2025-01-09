@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form id="ageForm">
+            <label for="dobDay">Day:</label>
+            <input type="number" id="dobDay" name="dobDay" required min="1" max="31">
+            
+            <label for="dobMonth">Month:</label>
+            <input type="number" id="dobMonth" name="dobMonth" required min="1" max="12">
+            
+            <label for="dobYear">Year:</label>
+            <input type="number" id="dobYear" name="dobYear" required min="1900" max="2100">
+            
+            <button type="button" onclick="calculateAge()">Calculate Age</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
